@@ -21,7 +21,7 @@ def merge(items, p, q, r):
 
 def mergesort(items, p, r):
     if(p < r):
-        q = (p+r)/2
+        q = (p+r)//2
         mergesort(items, p, q)
         mergesort(items, q+1, r)
         merge(items, p, q, r)
